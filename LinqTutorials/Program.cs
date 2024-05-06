@@ -16,6 +16,7 @@ namespace LinqTutorials
             var t8 = LinqTasks.Task8();
             var t9 = LinqTasks.Task9();
             var t10 = LinqTasks.Task10();
+            var t11 = LinqTasks.Task11();
 
         }
     }

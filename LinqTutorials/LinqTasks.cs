@@ -289,7 +289,9 @@ namespace LinqTutorials
         /// </summary>
         public static IEnumerable<object> Task11()
         {
-            IEnumerable<object> result = null;
+            IEnumerable<object> result = Emps.GroupBy(e => e.Deptno) 
+                .Where(g => g.Count() > 1) 
+                .Select(g => new {name = GetDeptName(g.Key), numOfEmployees = g.Count()}).ToList();
             return result;
         }
 
