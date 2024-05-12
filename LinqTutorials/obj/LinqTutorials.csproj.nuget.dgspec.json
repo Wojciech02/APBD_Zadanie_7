@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kubab\\OneDrive\\Pulpit\\APBD\\ITN\\Zajecia8\\LinqCwiczenia\\LinqCwiczenia\\LinqTutorials\\LinqTutorials.csproj": {}
+    "C:\\Users\\user\\Desktop\\APBD_Zadanie_7\\LinqTutorials\\LinqTutorials.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kubab\\OneDrive\\Pulpit\\APBD\\ITN\\Zajecia8\\LinqCwiczenia\\LinqCwiczenia\\LinqTutorials\\LinqTutorials.csproj": {
+    "C:\\Users\\user\\Desktop\\APBD_Zadanie_7\\LinqTutorials\\LinqTutorials.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kubab\\OneDrive\\Pulpit\\APBD\\ITN\\Zajecia8\\LinqCwiczenia\\LinqCwiczenia\\LinqTutorials\\LinqTutorials.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\APBD_Zadanie_7\\LinqTutorials\\LinqTutorials.csproj",
         "projectName": "LinqTutorials",
-        "projectPath": "C:\\Users\\kubab\\OneDrive\\Pulpit\\APBD\\ITN\\Zajecia8\\LinqCwiczenia\\LinqCwiczenia\\LinqTutorials\\LinqTutorials.csproj",
-        "packagesPath": "C:\\Users\\kubab\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kubab\\OneDrive\\Pulpit\\APBD\\ITN\\Zajecia8\\LinqCwiczenia\\LinqCwiczenia\\LinqTutorials\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\APBD_Zadanie_7\\LinqTutorials\\LinqTutorials.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\APBD_Zadanie_7\\LinqTutorials\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kubab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -50,30 +55,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.17, 5.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

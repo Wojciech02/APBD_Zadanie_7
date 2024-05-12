@@ -304,7 +304,10 @@ namespace LinqTutorials
         /// </summary>
         public static IEnumerable<Emp> Task12()
         {
-            IEnumerable<Emp> result = null;
+            IEnumerable<Emp> result = Emps
+                .Where(emp => Emps.Any(sub => sub.Mgr != null && sub.Mgr.Empno == emp.Empno))
+                .OrderBy(emp => emp.Ename)
+                .ThenByDescending(emp => emp.Salary);
             return result;
         }
 
@@ -317,7 +320,9 @@ namespace LinqTutorials
         /// </summary>
         public static int Task13(int[] arr)
         {
-            int result = 0;
+            int result = arr.GroupBy(num => num)
+                .Where(group => group.Count() % 2 != 0)
+                .Select(group => group.Key);
             //result=
             return result;
         }
@@ -328,7 +333,11 @@ namespace LinqTutorials
         /// </summary>
         public static IEnumerable<Dept> Task14()
         {
-            IEnumerable<Dept> result = null;
+            IEnumerable<Dept> result = employees.GroupBy(e => e.Deptno) 
+                .Where(g => g.Count() == 5 || g.Count() == 0) 
+                .OrderBy(g => g.Key) 
+                .SelectMany(g => g.Select(e => e.Deptno).Distinct()) 
+                .ToList();
             //result =
             return result;
         }
@@ -342,7 +351,11 @@ namespace LinqTutorials
         /// </summary>
         public static IEnumerable<Dept> Task15()
         {
-            IEnumerable<Dept> result = null;
+            IEnumerable<Dept> result = Emps.Where(e => e.Job.Contains("A")) 
+                .GroupBy(e => e.Job) 
+                .Where(g => g.Count() > 2) 
+                .Select(g => new{Praca = g.Key,LiczbaPracownikow = g.Count() })
+                .OrderByDescending(x => x.LiczbaPracownikow);
             //result =
             return result;
         }
@@ -352,7 +365,7 @@ namespace LinqTutorials
         /// </summary>
         public static IEnumerable<Dept> Task16()
         {
-            IEnumerable<Dept> result = null;
+            IEnumerable<Dept> result = Emps.SelectMany(emp => Depts, (emp, dept) => new {Employee = emp,Department = dept});
             //result =
             return result;
         }
